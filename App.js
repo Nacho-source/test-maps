@@ -16,7 +16,7 @@ import VIForegroundService from "@voximplant/react-native-foreground-service";
 import styles from "./global.styles";
 import MapView from "./src/MapView";
 
-export default function App() {
+const App = () => {
   const [forceLocation, setForceLocation] = useState(true);
   const [highAccuracy, setHighAccuracy] = useState(true);
   const [locationDialog, setLocationDialog] = useState(true);
@@ -299,4 +299,6 @@ export default function App() {
       </ScrollView>
     </View>
   );
-}
+};
+
+export default App;
